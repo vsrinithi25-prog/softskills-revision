@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f6f2">
+  <meta name="description" content="A calm, mobile-friendly revision space for Essential Communication and Social Skills III.">
+  <title>Essential Communication & Social Skills III — Revision</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Revision home"><span class="brand-mark">E</span><span>ESSENTIAL COMMUNICATION<br><small>& SOCIAL SKILLS III</small></span></a>
+    <nav aria-label="Main navigation"><a href="#units">Units</a><a href="#vocabulary">Vocabulary</a><a href="#quiz">Quiz</a><a href="#history">History</a></nav>
+  </header>
+  <main id="home">
+    <section class="hero"><div><p class="eyebrow">YOUR REVISION SPACE</p><h1>Study with clarity.<br><em>Show up prepared.</em></h1><p class="intro">Short, focused revision for your Essential Communication and Social Skills III exam.</p><a class="button" href="#units">Explore the units <span>↗</span></a></div><div class="hero-card"><span class="card-label">QUICK RESET</span><p>Read a key idea.<br>Recall it without looking.<br>Check what you missed.</p><span class="card-foot">A little practice goes a long way.</span></div></section>
+    <div class="notice"><strong>Content note</strong><span>The source notes, syllabus index and scanned question paper were not attached to the accessible conversation preview. These concise starter notes are general revision material, not a verified transcription of your course materials. Confirm unit headings and examinable details against your own syllabus.</span></div>
+    <section class="section" id="units"><div class="section-heading"><div><p class="eyebrow">01 — COURSE MAP</p><h2>Five units, one clear path.</h2></div><p class="muted">Choose a unit to open its notes and quick revision.</p></div><div id="unit-grid" class="unit-grid"></div><article id="unit-detail" class="unit-detail" hidden></article></section>
+    <section class="section vocab-section" id="vocabulary"><div class="section-heading"><div><p class="eyebrow">02 — WORD WORK</p><h2>Vocabulary & easily confused words.</h2></div><p class="muted">Search definitions, usage notes and pairs.</p></div><label class="search-wrap"><span>⌕</span><input id="vocab-search" type="search" placeholder="Search a word or meaning…" aria-label="Search vocabulary"></label><div id="vocab-list" class="vocab-list"></div></section>
+    <section class="section quiz-section" id="quiz"><div class="section-heading"><div><p class="eyebrow">03 — ACTIVE RECALL</p><h2>Take a quick quiz.</h2></div><p class="muted">Each set is shuffled. Your attempts stay in this browser.</p></div><div class="quiz-controls"><label>Question count <select id="quiz-count"><option value="5">5 questions</option><option value="10">10 questions</option><option value="all">All available</option></select></label><button id="start-quiz" class="button">Start a fresh set <span>↻</span></button></div><div id="quiz-area"></div></section>
+    <section class="section history-section" id="history"><div class="section-heading"><div><p class="eyebrow">04 — YOUR PRACTICE</p><h2>Attempt history.</h2></div><button id="clear-history" class="text-button">Clear history</button></div><div id="history-list"></div></section>
+    <section class="section helper-section" id="helper"><div><p class="eyebrow">05 — STUDY HELPER</p><h2>Ask your notes.</h2><p class="muted">This offline helper searches the revision text included with this site. It is not an AI chatbot, and its answers can be incomplete. For course-specific answers, check your class notes.</p></div><div class="helper-box"><div id="chat-log" class="chat-log" aria-live="polite"><p class="chat-msg assistant">Ask about a topic covered here, such as active listening or non-verbal communication.</p></div><form id="ask-form"><input id="ask-input" placeholder="Ask a revision question…" aria-label="Ask a revision question"><button class="button" type="submit">Ask</button></form></div></section>
+  </main>
+  <footer><span>ESSENTIAL COMMUNICATION & SOCIAL SKILLS III</span><span>Made for focused revision · Works offline</span></footer>
+  <script src="app.js"></script>
+</body>
+</html>
